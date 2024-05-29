@@ -9,7 +9,7 @@ const mongoose = require('mongoose')
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: false }));
-mongoose.connect('mongodb+srv://gulerian282:12341234@@cluster0.veda7mu.mongodb.net/login')
+mongoose.connect('mongodb+srv://<id and password of your database>@cluster0.veda7mu.mongodb.net/login')
     .then(res => {
         console.log("DataBase connected sucessfully'")
 
